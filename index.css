@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css?family=Oleo+Script:400|Open+Sans:300,300italic,600,600italic,800");
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    color: #ffffff;
+    
+}
+
+/* HEADER CABEÇALHO*/
+
+header {
+    background-color: #918986;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10em;
+    top: 0;
+    width: 80vw;
+    font-family:'Open Sans', sans-serif ;
+    
+}
+
+.logo4food {
+    width: 120px;
+    margin-right: 10px;
+}
+
+li {
+    padding: 20px;
+    font-size: 18px;
+}
+
+li:hover {
+    background-color: #918986;;
+}
+
+a:hover {
+    color: #613a24;
+}
+
+.nav li {
+    display: inline;
+    padding: 0px 20px;
+    list-style: none;
+}
+
+/* MAIN IMAGENS BANNER */
+
+#container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+
+#img1 {
+    width: 35em;
+    height: 24em;
+    margin: 4em;
+    background-position: center;
+    background-image: url(img/sejabemvindo.jpeg);
+}
+
+#img1 h1 {
+    color: #654b25;
+    font-family: 'Open Sans', sans-serif ; 
+    text-align: center;
+    padding-top: 1em;
+    font-size: 28px;
+}
+
+#img1 p {
+    color: #654b25;
+    text-align: center;
+    font-size: 24px;
+}
+
+#btn {
+    text-align: center;
+    margin-top: 2em;
+}
+
+.efeito {
+    width: 10em;
+    height: 2em;
+    color: #ffffff;
+    border: none;
+    box-sizing: border-box;
+    font-size: 16px;
+    position: relative;
+    background-color: #484848;
+}
+
+.efeito:hover {
+    color: #ffffff;
+    background-color: #613a24;
+}
+
+
+
+#img2 {
+    width: 35em;
+    height: 24em;
+    margin: 4em;
+    background-position: center;
+    background-image: url(img/promocao.jpeg);
+}
+
+
+#img2 h1 {
+    color: #654b25;
+    font-family: 'Open Sans', sans-serif ; 
+    text-align: center;
+    padding-top: 1em;
+    font-size: 28px;
+}
+
+
+
+
+/* FOOTER CONTATO */
+
+footer {
+    left: 0;
+    bottom: 0;
+    background-color: #918986;;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(4, 8vh);
+}
+
+
+#nossas-redes {
+    font-family:'Open Sans', sans-serif ; 
+    display: grid;
+    align-items: end;
+    justify-content: center;
+    grid-column: 8 / span 2;
+    grid-row: 2;
+}
+
+#redes-sociais {
+    display: grid;
+    grid-column: 6 / span 6;
+    grid-row: 3 / span 2;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    grid-auto-flow: column;
+}
+
+#img-rede-social {
+    height: 60px;
+    
+}
+
+
+#logo-footer {
+    grid-column: span 5;
+    grid-row: 1 / span 6;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    max-height: 20em;
+
+}
+
+.alunos {
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(100, 100, 100);
+    font-family: 'Open Sans', sans-serif ; 
+}
+
+
+
+/* RESPONSIVIDADE INCOMPLETA */
+
+@media (min-width: 240px) and (max-width: 480px) {
+    
+    #container {
+        display: block;
+        width: 40vh;
+    }
+    #img1 {
+        width: 20em;
+        height: 20em;
+    }
+   
+    #img2 {
+        width: 20em;
+        height: 20em;
+    }
+
+    #img1 h1 {
+        
+        padding-top: 1em;
+        font-size: 50px;
+    }
+    #img1 p {
+        font-size: 20px;
+    }
+
+    
+    #img2 h1 {
+        padding-top: 1em;
+        font-size: 30px;
+    }
+   
+    #btn {
+        text-align: center;
+        margin-top: 1em;
+    }
+    .efeito {
+        width: 5em;
+        height: 3em;
+    }
+    
+}
+
