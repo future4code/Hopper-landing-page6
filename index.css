@@ -184,6 +184,94 @@ img {
 
 
 
+/* CATÁLOGO */
+
+
+.catalogo-main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    align-items: center;
+
+}
+
+.img-catalogo{
+    width: 300px;
+}
+
+
+.card{
+    margin: 10px;
+    margin: 50px 20px 20px 20px;
+}
+
+.text-produto{
+color:#613a24;
+margin-top: 10px ;
+}
+
+.botao img{
+width: 20px;
+
+}
+
+.text-button{
+    align-items: center;
+    justify-content: center;
+    color:#613a24;
+    
+}
+
+.botao{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 7px 25px 7px 25px; 
+    display: flex;
+    margin-left: 80px;
+    border:#484848;
+    background-color: rgb(255, 120, 23);
+    
+    
+}
+
+.botao p {
+    color: #613a24;
+}
+
+
+.img-catalogo:hover {
+    transform: scale(1.10);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* RESPONSIVIDADE INCOMPLETA */
 
 @media (min-width: 240px) and (max-width: 480px) {
