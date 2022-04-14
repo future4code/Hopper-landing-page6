@@ -184,6 +184,75 @@ img {
 
 
 
+/* CATÁLOGO */
+
+
+.catalogo-main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    max-width: 1150px;
+    margin: 0 auto;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    align-items: center;
+}
+
+.img-catalogo{
+    width: 300px;
+}
+
+
+.card{
+    margin: 10px;
+    align-items: center;
+    margin: 10px;
+    margin: 50px 20px 20px 20px;
+}
+
+.text-produto{
+color: #613a24;
+margin-top: 10px ;
+}
+
+.botao img{
+width: 20px;
+
+}
+
+.text-button{
+    align-items: center;
+}
+
+.botao{
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* RESPONSIVIDADE INCOMPLETA */
 
 @media (min-width: 240px) and (max-width: 480px) {
