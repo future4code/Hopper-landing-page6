@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0;
     text-decoration: none;
+    color: #ffffff;
 
 }
 
@@ -27,6 +28,7 @@ header {
 }
 
 li {
+    
     padding: 20px;
     font-size: 18px;
 }
@@ -275,23 +277,75 @@ main h1{
     font-weight: bold;
 }
 
+/*PROMOÇÕES*/
+
+.promoçao-main{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 0.5fr;
+    padding-top: 20px;
+    row-gap: 20px;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    margin: 50px 10px;
+    
+    
+    
+}
+
+.img-promo{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-right: 30px;
+    margin-left: 50px;
+    
+}
+
+
+.promoçao-main img:hover{
+   transform: scale(1.10);
+}
+
+.promoçao-main button{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+    border-radius: 5px;
+    display: flex;
+    margin-left: 80px;
+    border: none;
+    background-color: rgb(255, 120, 23);
+    color: #484848;
+}
 
 
 
+h1{
+    text-align: center;
+    padding: 50px;
+    font-size: 2.5em;
+    color:#613a24;
+    text-decoration: underline;
+    font-family: 'Open Sans', sans-serif;
+}
 
 
+h3{
+    text-align: center;
+    color: #613a24;
+    
+}
 
-
-
-
-
-
-
-
-
-
-
-
+u{
+    color: #613a24;
+    text-decoration: line-through;
+}
 
 
 
@@ -301,42 +355,71 @@ main h1{
 
 /* RESPONSIVIDADE INCOMPLETA */
 
-@media (min-width: 240px) and (max-width: 480px) {
-
+@media screen and (max-device-width:800px) {
+    
+   
     #container {
+        
         display: block;
         width: 40vh;
     }
-
     #img1 {
-        width: 20em;
-        height: 20em;
+        
+        background-size: 390px;
+        width: 90%;
+        height: 70%;
+        padding-bottom: 20px;
+        align-items: center;
+           
     }
-
+   
     #img2 {
-        width: 20em;
-        height: 20em;
+        background-size: 300px;
+        width: 90%;
+        height: 70%;
+        padding-bottom: 20px;
+        align-items: center;
     }
 
     #img1 h1 {
-
-        padding-top: 1em;
-        font-size: 50px;
-    }
-
-    #img1 p {
-        font-size: 20px;
-    }
-
-
-    #img2 h1 {
+        
         padding-top: 1em;
         font-size: 30px;
     }
+    #img1 p {
+        
+        font-size: 20px;
+        
+    }
 
+    
+    #img2 h1 {
+       
+        padding-top: 1em;
+        font-size: 30px;
+    }
+   
     #btn {
         text-align: center;
         margin-top: 1em;
+        
+    }
+    #logo-footer{
+     display: none;
+
+    }
+     
+    #redes-sociais img{
+      width: 30px;
+      height: 30px;
+    }
+
+    footer{
+       
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 20px;
+        
     }
 
     .efeito {
@@ -344,4 +427,118 @@ main h1{
         height: 3em;
     }
 
-}
+    /*CATALOGO*/
+
+    .catalogo-main{
+        margin-top: 10px;
+    }
+
+    .img-catalogo{
+        width: 150px;
+        
+    } 
+
+    .text-produto{
+        font-size: 15px;
+    }
+
+       
+     /*PROMOÇAO*/
+
+     main h1{
+         
+         font-size: 20px;
+     }
+
+     
+     header{
+        
+         display: flex;
+         align-content: center;
+         justify-content: center;
+         padding-right: 10px;
+         margin-right: 150px;
+         
+     }
+         
+    .logo4food{
+           width: 80px;
+           padding-left: 10px;   
+          
+           
+      }
+ 
+
+      ul{
+        
+          display: flex;
+          width: 100%;
+          padding-right: 100px;
+          margin-right: 100px;
+          
+          
+          
+      }
+
+      li{
+        
+          padding-right: 5px;
+          margin-right: 2px;
+          padding-bottom: 1px;
+          font-size: 12px;
+          
+      }
+     
+     .promoçao-main{
+       
+         display: flex;
+         flex-direction: column;
+         margin-bottom: 50px;
+         
+     }
+
+     .img-promo button{
+         align-items: center;
+         justify-content: center;
+         padding-right: 60px;
+         width: 100px;
+     }
+
+     footer{
+         padding-top: 20px;
+     }
+
+     
+
+     .alunos{
+        
+         display: flex;
+         flex-direction: column;
+         font-size: 10px;
+         justify-content: center;
+         width: 100%;
+         
+     } 
+     
+            
+     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
