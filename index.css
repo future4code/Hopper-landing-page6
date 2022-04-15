@@ -15,7 +15,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 10em;
+    padding: 20px 128px;
     top: 0;
     width: 80vw;
     font-family:'Open Sans', sans-serif ;
@@ -172,12 +172,12 @@ img {
 }
 
 .alunos {
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     align-items: center;
-    padding: 20px;
+    
     background-color: rgb(100, 100, 100);
     font-family: 'Open Sans', sans-serif ; 
 }
@@ -253,9 +253,102 @@ width: 20px;
 
 
 
+/*PROMOÇÕES*/ 
+
+ul{
+    margin-right: 100px;
+}
+
+li{
+    display: inline-block;
+    margin-right: 40px;
+    padding-right: 40px;
+    
+}
+
+.promoçoes{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 0.5fr;
+    padding-top: 20px;
+    row-gap: 20px;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    
+    
+    
+}
+
+.img-promo{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-right: 30px;
+    margin-left: 50px;
+}
+
+
+.promoçoes img:hover{
+   transform: scale(1.10);
+}
+
+.promoçoes button{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+    border-radius: 5px;
+    display: flex;
+    margin-left: 80px;
+    border: none;
+    background-color: rgb(255, 120, 23);
+    color: #484848;
+}
+
+h3{
+    text-align: center;
+    color: #613a24;
+}
+
+u{
+    color: #613a24;
+    text-decoration: line-through;
+}
+
+
+.botao img{
+    height: 20px;
+    
+    
+}
+
+.botao{
+    display: flex;
+    text-align: center;
+    margin-right: 60px;
+    padding-right: 70px;
+}
 
 
 
+footer{
+    background-color: rgb(100, 100, 100);
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    align-content: center;
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+
+footer p{
+    margin-bottom: 20px;
+}
 
 
 
@@ -274,33 +367,46 @@ width: 20px;
 
 /* RESPONSIVIDADE INCOMPLETA */
 
-@media (min-width: 240px) and (max-width: 480px) {
+@media screen and (max-device-width:800px) {
     
+   
     #container {
+        
         display: block;
         width: 40vh;
     }
     #img1 {
-        width: 20em;
-        height: 20em;
+        
+        background-size: 390px;
+        width: 90%;
+        height: 70%;
+        padding-bottom: 20px;
+        align-items: center;
+           
     }
    
     #img2 {
-        width: 20em;
-        height: 20em;
+        background-size: 300px;
+        width: 90%;
+        height: 70%;
+        padding-bottom: 20px;
+        align-items: center;
     }
 
     #img1 h1 {
         
         padding-top: 1em;
-        font-size: 50px;
+        font-size: 30px;
     }
     #img1 p {
+        
         font-size: 20px;
+        
     }
 
     
     #img2 h1 {
+       
         padding-top: 1em;
         font-size: 30px;
     }
@@ -308,11 +414,117 @@ width: 20px;
     #btn {
         text-align: center;
         margin-top: 1em;
+        
     }
+    #logo-footer{
+     display: none;
+
+    }
+     
+    #redes-sociais img{
+      width: 30px;
+      height: 30px;
+    }
+
+    footer{
+       
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 20px;
+        
+    }
+
     .efeito {
         width: 5em;
         height: 3em;
     }
+
+    /*CATALOGO*/
+
+    .catalogo-main{
+        margin-top: 10px;
+    }
+
+    .img-catalogo{
+        width: 150px;
+        
+    } 
+
+    .text-produto{
+        font-size: 15px;
+    }
+
+       
+     /*PROMOÇAO*/
+
+     
+     header{
+        
+         display: flex;
+         align-content: center;
+         justify-content: center;
+         padding-right: 10px;
+         margin-right: 150px;
+         
+     }
+         
+    .logo4food{
+           width: 80px;
+           padding-left: 10px;   
+          
+           
+      }
+ 
+
+      ul{
+        
+          display: flex;
+          width: 100%;
+          padding-right: 100px;
+          margin-right: 100px;
+          
+          
+          
+      }
+
+      li{
+        
+          padding-right: 5px;
+          margin-right: 2px;
+          padding-bottom: 1px;
+          font-size: 12px;
+          
+      }
+     
+     .promoçoes{
+       
+         display: flex;
+         flex-direction: column;
+         margin-bottom: 50px;
+         
+     }
+
+     .img-promo{
+         align-items: center;
+         justify-content: center;
+         padding-right: 60px;
+     }
+
+     
+
+     .alunos{
+        
+         display: flex;
+         flex-direction: column;
+         font-size: 10px;
+         justify-content: center;
+         width: 100%;
+         
+         
+        
+     }
+ 
     
+
 }
 
